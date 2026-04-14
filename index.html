@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Kahini — Psychologist. Creating space for individuals and couples to understand, connect, and grow."/>
+  <title>Kahini — Psychologist</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cormorant+Upright:wght@300;400;500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ─────────────────────────────────────────
+       NAV
+  ───────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">Kahini</div>
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#couples" class="nav__link">Couples</a>
+      <a href="#support" class="nav__link">Support</a>
+      <a href="#contact" class="nav__link nav__link--cta">Reach Out</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"   class="mobile-menu__link" data-close>About</a>
+    <a href="#couples" class="mobile-menu__link" data-close>Couples</a>
+    <a href="#support" class="mobile-menu__link" data-close>Support</a>
+    <a href="#contact" class="mobile-menu__link" data-close>Reach Out</a>
+  </div>
+
+  <!-- ─────────────────────────────────────────
+       HERO
+  ───────────────────────────────────────── -->
+  <section class="hero" id="hero">
+
+    <!-- Large ambient background text -->
+    <div class="hero__ambient" aria-hidden="true">MIND</div>
+
+    <!-- Floating botanical SVG -->
+    <div class="hero__botanical hero__botanical--1" aria-hidden="true">
+      <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 190 C60 150, 60 100, 60 10" stroke="#b07d5a" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M60 120 C40 100, 20 80, 30 55 C40 35, 60 50, 60 80" fill="#c4a882" opacity="0.5"/>
+        <path d="M60 140 C80 120, 100 95, 90 68 C80 45, 60 60, 60 95" fill="#c4a882" opacity="0.4"/>
+        <path d="M60 95 C45 78, 28 60, 35 40 C42 22, 60 35, 60 65" fill="#8a9e6e" opacity="0.35"/>
+        <path d="M60 110 C75 93, 92 72, 85 50 C78 30, 60 43, 60 75" fill="#8a9e6e" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="hero__botanical hero__botanical--2" aria-hidden="true">
+      <svg viewBox="0 0 80 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40 155 C40 120, 40 70, 40 5" stroke="#8a9e6e" stroke-width="1" stroke-linecap="round"/>
+        <path d="M40 90 C25 75, 10 55, 18 35 C26 18, 40 30, 40 58" fill="#8a9e6e" opacity="0.4"/>
+        <path d="M40 110 C55 95, 70 72, 62 48 C54 28, 40 42, 40 72" fill="#8a9e6e" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__line"></span>
+          <span>Psychologist · Chennai</span>
+        </div>
+        <h1 class="hero__name">
+          <span class="hero__name-hi">Hi, I'm</span>
+          <span class="hero__name-main">Kahini</span>
+        </h1>
+        <p class="hero__tagline">
+          With individuals and couples, I create<br/>
+          space to understand and connect—<br/>
+          <em>in ways that feel steady, simple, and real.</em>
+        </p>
+        <a href="#contact" class="hero__cta">
+          <span>Begin here</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__photo-col">
+        <div class="hero__photo-wrap">
+          <div class="hero__photo-border"></div>
+          <img src="assets/images/kahini-photo.jpg" alt="Kahini, Psychologist" class="hero__photo" loading="eager"/>
+          <div class="hero__photo-tag">3+ years experience</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       MARQUEE STRIP
+  ───────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Mental Clarity</span><span class="marquee__dot">·</span>
+      <span>Emotional Wellbeing</span><span class="marquee__dot">·</span>
+      <span>Self-Understanding</span><span class="marquee__dot">·</span>
+      <span>Relationship Growth</span><span class="marquee__dot">·</span>
+      <span>Inner Balance</span><span class="marquee__dot">·</span>
+      <span>Gentle Progress</span><span class="marquee__dot">·</span>
+      <span>Mental Clarity</span><span class="marquee__dot">·</span>
+      <span>Emotional Wellbeing</span><span class="marquee__dot">·</span>
+      <span>Self-Understanding</span><span class="marquee__dot">·</span>
+      <span>Relationship Growth</span><span class="marquee__dot">·</span>
+      <span>Inner Balance</span><span class="marquee__dot">·</span>
+      <span>Gentle Progress</span><span class="marquee__dot">·</span>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────────────────
+       ABOUT / THE SPACE
+  ───────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="about__inner">
+
+      <div class="about__image-col reveal">
+        <div class="about__img-wrap">
+          <img src="assets/images/therapy-chairs.jpg" alt="Therapy space" class="about__img" loading="lazy"/>
+          <div class="about__img-caption">The Space I Create</div>
+        </div>
+        <!-- Decorative number -->
+        <div class="about__number" aria-hidden="true">01</div>
+      </div>
+
+      <div class="about__text-col reveal reveal--delay">
+        <div class="about__section-label">About</div>
+        <h2 class="about__heading">
+          A space that<br/>
+          <em>holds you</em><br/>
+          as you are.
+        </h2>
+        <div class="about__body">
+          <p>I'm a psychologist with over three years of experience, working with individuals to understand their thoughts, emotions, and patterns in a way that feels clear and manageable.</p>
+          <p>My work is centred around creating a space that feels calm, open, and easy to step into—where you don't need to have everything figured out before you begin.</p>
+        </div>
+        <blockquote class="about__quote">
+          "It's a space that allows you to slow down, understand yourself better, and make sense of things at your own pace."
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       FOR COUPLES
+  ───────────────────────────────────────── -->
+  <section class="couples" id="couples">
+
+    <!-- Textured background blob -->
+    <div class="couples__blob" aria-hidden="true"></div>
+
+    <div class="couples__inner">
+
+      <div class="couples__text-col reveal">
+        <div class="about__section-label" style="color:#6b4c3b;">For Couples</div>
+        <h2 class="couples__heading">
+          Two people.<br/>
+          One <em>conversation</em><br/>
+          at a time.
+        </h2>
+        <div class="couples__body">
+          <p>As a couple therapy practitioner, I work closely with couples, creating a space where both people feel heard, understood, and comfortable to express themselves.</p>
+          <p>In our work together, we focus on understanding each other's perspectives, improving communication, and finding ways to feel more connected.</p>
+        </div>
+        <div class="couples__pull">
+          <div class="couples__pull-line"></div>
+          <p>"It's not about who's right—it's about understanding each other."</p>
+        </div>
+      </div>
+
+      <div class="couples__image-col reveal reveal--delay">
+        <div class="couples__img-wrap">
+          <img src="assets/images/heart-puzzle.jpg" alt="Heart puzzle illustration" class="couples__img" loading="lazy"/>
+        </div>
+        <div class="couples__number" aria-hidden="true">02</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SUPPORT / SERVICES
+  ───────────────────────────────────────── -->
+  <section class="support" id="support">
+    <div class="support__inner">
+
+      <div class="support__header reveal">
+        <div class="about__section-label">How I Can Help</div>
+        <h2 class="support__heading">You don't need<br/> to have it all<br/> <em>figured out.</em></h2>
+      </div>
+
+      <div class="support__grid">
+        <div class="support__item reveal">
+          <div class="support__item-num">—</div>
+          <p>Managing overthinking and building mental clarity</p>
+        </div>
+        <div class="support__item reveal reveal--delay">
+          <div class="support__item-num">—</div>
+          <p>Navigating anxiety, stress, and emotional overwhelm</p>
+        </div>
+        <div class="support__item reveal">
+          <div class="support__item-num">—</div>
+          <p>Strengthening self-esteem and self-understanding</p>
+        </div>
+        <div class="support__item reveal reveal--delay">
+          <div class="support__item-num">—</div>
+          <p>Working through relationship dynamics</p>
+        </div>
+        <div class="support__item reveal">
+          <div class="support__item-num">—</div>
+          <p>Improving decision-making and reducing procrastination</p>
+        </div>
+        <div class="support__item reveal reveal--delay">
+          <div class="support__item-num">—</div>
+          <p>Creating a better sense of balance in daily life</p>
+        </div>
+      </div>
+
+      <p class="support__note reveal">
+        You're also welcome even if you're not facing a specific concern—<br/>
+        clarity, growth, and the need to pause are enough.
+      </p>
+
+    </div>
+
+    <!-- Number accent -->
+    <div class="support__bg-num" aria-hidden="true">03</div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       CONTACT
+  ───────────────────────────────────────── -->
+  <section class="contact" id="contact">
+
+    <div class="contact__header reveal">
+      <div class="about__section-label" style="color:#c4a882;">Get in Touch</div>
+      <h2 class="contact__heading">
+        Ready to take<br/>that first step?
+      </h2>
+      <p class="contact__sub">All conversations are private and handled with care.</p>
+    </div>
+
+    <div class="contact__inner">
+
+      <!-- Info -->
+      <div class="contact__info reveal">
+        <div class="contact__info-item">
+          <span class="contact__info-label">Email</span>
+          <a href="mailto:kahinimanivannan03@gmail.com" class="contact__info-val">kahinimanivannan03@gmail.com</a>
+        </div>
+        <div class="contact__info-item">
+          <span class="contact__info-label">Phone</span>
+          <a href="tel:+916383747499" class="contact__info-val">+91 638 374 7499</a>
+        </div>
+        <div class="contact__info-item">
+          <span class="contact__info-label">Mode</span>
+          <span class="contact__info-val">Online · Offline (Chennai)</span>
+        </div>
+        <div class="contact__info-item">
+          <span class="contact__info-label">Privacy</span>
+          <span class="contact__info-val">All sessions are fully confidential</span>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact__form reveal reveal--delay" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <input type="text" id="name" name="name" class="form-input" placeholder=" " required autocomplete="name"/>
+            <label for="name" class="form-label">Your Name</label>
+            <div class="form-underline"></div>
+          </div>
+          <div class="form-field">
+            <input type="email" id="email" name="email" class="form-input" placeholder=" " required autocomplete="email"/>
+            <label for="email" class="form-label">Email Address</label>
+            <div class="form-underline"></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="4" required></textarea>
+          <label for="message" class="form-label">What's on your mind?</label>
+          <div class="form-underline"></div>
+        </div>
+        <div class="form-mode">
+          <label class="mode-option">
+            <input type="radio" name="mode" value="Online" checked/>
+            <span class="mode-box">Online</span>
+          </label>
+          <label class="mode-option">
+            <input type="radio" name="mode" value="Offline"/>
+            <span class="mode-box">Offline · Chennai</span>
+          </label>
+        </div>
+        <button type="submit" class="form-btn" id="sendBtn">
+          <span id="btnText">Send Message</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-success" id="formSuccess" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       FOOTER
+  ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__name">Kahini</div>
+      <p class="footer__tagline">Understanding yourself is a good place to begin.</p>
+      <div class="footer__links">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#couples">Couples</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">© 2025 Kahini Manivannan · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
